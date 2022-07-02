@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ART AND CRAFTS</title>
+        
+        <link  href={% static "crafts/css/footerstyle.css" %} rel="stylesheet">
+        <link  href={% static "crafts/css/loginpage.css" %} rel="stylesheet">
+        <link  href={% static "crafts/css/home.css" %} rel="stylesheet">
+
+        <!-- <link rel="stylesheet" href={ % static "webcss/loginpage.css" %}>
+        <link rel="stylesheet" href={ % static "webcss/home.css" %}> -->
+    </head>
+    <body>
+        <div class="main">
+            <div class="wrapper">
+    
+                    <nav>
+                        <div class="logo">
+                            <a href={% static "craft/homepage.html" %}>Crafty Crafts</a>
+                        </div>
+                        <ul>
+                        <li><a href={% static "craft/homepage.html" %}>HOME</a></li>
+                        <li><a href={% static "craft/products.html" %}>PRODUCTS</a></li>
+                        <li><a href={% static "craft/login.html" %}>LOGIN</a></li>
+                        <li><a href={% static "craft/register.html" %}>REGISTER</a></li>
+                        <li><a href={% static "crafts/contact.html" %}>CONTACT</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    
+                
+            </div>
+        </div>
+        <br><br><br>
+        <!----login account page-->
+        <center>
+            <form  action="/login" method="post">
+                <label>USERNAME</label>
+                <input type="text" id="username" name="username" placeholder="Enetr username" Required>
+                <br><br><br>
+                <label>PASSWORD</label>
+                <input type="password" id="password" name="pass1" placeholder="Enetr password" Required>
+                <br><br><br>
+               <button type="submit">Login</button>
+            </form>
+        </center>
+       
+
+        <br><br><br>
+
+    <div class="footer-container">
+        <div class="footer">
+         <div class="footer-heading footer-1">
+             <h2>About Us</h2>
+             <a href="#">Blog</a>
+             <a href="#">Demo</a>
+             <a href="#">Customors</a>
+             <a href="#">Investors</a>
+             <a href="#">Terms of Service</a>
+         </div>
+         <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a>
+            <a href="#">support</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a>
+            <a href="#">FaceBook</a>
+            <a href="#">You Tube</a>
+            <a href="#">Twitter</a>
+            
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our news letter</h2>
+            <input type="email" style="color: black;"placeholder="Enter your email address"
+             id="footer-email">
+            <input type="submit" value="Sign Up"
+            id="footer-email-btn">           
+        </div>
+        </div>
+    </div>
+    </body>
+</html>

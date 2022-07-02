@@ -1,0 +1,90 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link  href={% static "crafts/css/footerstyle.css" %} rel="stylesheet">
+    <!-- <link  href={% static "webcss/css/loginpage.css" %} rel="stylesheet"> -->
+    <link  href={% static "crafts/css/home.css" %} rel="stylesheet">
+    <title>Crafty Crafts</title>
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <div class="header">
+                <nav>
+                    <div class="logo">
+                        <a href={% static "craft/homepage.html" %}>Crafty Crafts</a>
+                    </div>
+                    <ul>
+                        <li><a href={% static "craft/homepage.html" %}>HOME</a></li>
+                        <li><a href={% static "craft/products.html" %}>PRODUCTS</a></li>
+                        <li><a href={% static "craft/login.html" %}>LOGIN</a></li>
+                        <li><a href={% static "craft/register.html" %}>REGISTER</a></li>
+                        <li><a href={% static "crafts/contact.html" %}>CONTACT</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </nav>
+                <div class="content">
+                
+                    <h1>Welcome To NANDU's Crafty Crafts</h1><br><br>
+                    <p>
+                        Success isn't always about greatness.
+                              It is about consistency.<br> 
+
+                Consistent hard work gains success.
+                              Greatness will come.
+                    
+                    </p><br><br>
+
+                    
+                 <button><a style=color:deeppink href={% static "craft/products.html" %}>Shop Now</a></button>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+
+    <div class="footer-container">
+        <div class="footer">
+         <div class="footer-heading footer-1">
+             <h2>About Us</h2>
+             <a href="#">Blog</a>
+             <a href="#">Demo</a>
+             <a href="#">Customors</a>
+             <a href="#">Investors</a>
+             <a href="#">Terms of Service</a>
+         </div>
+         <div class="footer-heading footer-2">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a>
+            <a href="#">support</a>
+            <a href="#">Contact</a>
+            <a href="#">Sponsorships</a>
+        </div>
+        <div class="footer-heading footer-3">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a>
+            <a href="#">FaceBook</a>
+            <a href="#">You Tube</a>
+            <a href="#">Twitter</a>
+            
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our news letter</h2>
+            <input type="email" placeholder=" Enter your email address"
+             id="footer-email">
+            <input type="submit" value="Sign Up"
+            id="footer-email-btn">           
+        </div>
+        </div>
+    </div>
+</body>
+</html>

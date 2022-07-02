@@ -1,0 +1,84 @@
+body{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: :100%;
+
+}
+
+nav{
+    width: 100%;
+    background-color: black;
+    
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.logo a{
+    font-size:30px;
+    color: deeppink;
+    margin-left: 100px;
+    font-weight:bold;
+}
+a{
+    text-decoration:none;
+    color: azure;
+    font-size: 17px;
+    transition: 0.3s all ease;
+}
+
+ul{
+    margin: 0px;
+    margin-right: 50px;
+    
+}
+ul li{
+    float: left;
+    padding: 0px 10px;
+    list-style: none;
+}
+
+ul li a:hover{
+    color:deeppink;
+}
+
+.header{
+    background-image: url("crafts/back.jpg" );
+    background-position: center;
+     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+}
+.content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   text-align: center;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    padding: 0px 100px;
+    font-size: 20px;
+}
+
+button{
+    background: none;
+    border: 1px solid black;
+    color: deeppink;
+    font-size: 18px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    transition: 0.5s all ease;
+
+}
+button:hover{
+    background: black;
+    color: azure;
+}
